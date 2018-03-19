@@ -61,7 +61,7 @@
   window.RTCIceCandidate = window.RTCIceCandidate || window.mozRTCIceCandidate || window.webkitRTCIceCandidate;
   window.RTCSessionDescription = window.RTCSessionDescription || window.mozRTCSessionDescription || window.webkitRTCSessionDescription;
 
-  const socket = io.connect('http://localhost');
+  const socket = io.connect('http://10.210.1.74:3000');
   var stream;
   var peerConn;
   var connectedUser = null;
@@ -271,62 +271,62 @@
 </script>
 
 <style>
-    .preview {
-        position: fixed;
-        z-index: 9998;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .5);
-        display: table;
-        transition: opacity .3s ease;
-    }
-    .preview-wrapper {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    .preview-container {
-        width: 400px;
-        height: 150px;
-        margin: 0px auto;
-        background-color: #fff;
-        border-radius: 2px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
-        transition: all .3s ease;
-        font-family: Helvetica, Arial, sans-serif;
-        position: relative;
-    }
-    .confirm {
-        position: absolute;
-        right: 10px;
-        top: 0px;
-        font-size: 40px;
-    }
-    .confirm:hover {
-        color: red;
-        cursor: pointer;
-    }
-    .preview-body {
-        position: absolute;
-        width: 380px;
-        height: 130px;
-        margin: 10px 10px 10px 10px;
-    }
-    .preview-body > h4 {
-        position: absolute;
-        top: 25%;
-        left: 20%;
-    }
-    .preview-body > button {
-        position: absolute;
-        right: 10px;
-        bottom: 0px;
-    }
-    .green_color {
-        color: green;
-    }
-    .red_color {
-        color: red;
-    }
+.preview {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+.preview-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.preview-container {
+  width: 400px;
+  height: 150px;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
+.confirm {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 40px;
+}
+.confirm:hover {
+  color: red;
+  cursor: pointer;
+}
+.preview-body {
+  position: absolute;
+  width: 380px;
+  height: 130px;
+  margin: 10px 10px 10px 10px;
+}
+.preview-body > h4 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.preview-body > button {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+.green_color {
+  color: green;
+}
+.red_color {
+  color: red;
+}
 </style>
